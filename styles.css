@@ -1,0 +1,118 @@
+
+/* Colors */
+:root {
+    --blue-600: #057EB6;
+    --blue-650: #2398DB;
+    --blue-700: #004899;
+    --blue-800: #002F66;
+    --blue-500: #0C1A66;
+    --blue-300: #75B6FF;
+    --blue-900: #003B4A;
+}
+
+/* Typography Styles */
+body {
+    font-family: "Poppins", sans-serif;
+    color: var(--blue-900);
+    line-height: 1.5;
+}
+
+/* Headings */
+h1 {
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: var(--blue-600);
+}
+
+h2 {
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--blue-650);
+}
+
+h3 {
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    color: var(--blue-500);
+}
+
+/* Subtitles */
+.subtitle-1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    color: var(--blue-300);
+}
+
+.subtitle-2 {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--blue-300);
+}
+
+/* Body Text */
+.body-1-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--blue-900);
+}
+
+.body-1-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--blue-900);
+}
+
+.body-2-semibold {
+    font-family: "Rethink Sans", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--blue-900);
+}
+
+.body-2-regular {
+    font-family: "Rethink Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--blue-900);
+}
+
+/* Layout Adjustments for Mobile */
+header, .hero-section, footer {
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--blue-700);
+}
+
+/* Buttons */
+.button, .cta-btn, .location-btn {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--blue-600);
+}
+
+.button:hover, .cta-btn:hover, .location-btn:hover {
+    background-color: var(--blue-800);
+}
+
+/* Footer */
+footer {
+    background-color: var(--blue-900);
+    color: #fff;
+}
