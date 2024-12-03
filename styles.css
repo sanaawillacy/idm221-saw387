@@ -1,23 +1,283 @@
 
-/* Colors */
+/* Color Variables */
 :root {
     --blue-600: #057EB6;
     --blue-650: #2398DB;
     --blue-700: #004899;
     --blue-800: #002F66;
-    --blue-500: #0C1A66;
+    --blue-500: #27B8C5;
     --blue-300: #75B6FF;
     --blue-900: #003B4A;
 }
 
-/* Typography Styles */
+/* General Styling */
 body {
     font-family: "Poppins", sans-serif;
     color: var(--blue-900);
     line-height: 1.5;
 }
 
-/* Headings */
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    border-bottom: 1px solid var(--blue-500);
+
+  label {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    height: 1 rem;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    width: 1.625rem;
+    z-index: 1001;
+
+    span {
+      background-color: var(--blue-650);
+      border-radius: 2px;
+      display: block;
+      height: 3px;
+      position: absolute;
+      width: 100%;
+
+      transform-origin: left;
+
+      &:nth-child(1) {
+        top: 0;
+      }
+
+      &:nth-child(2) {
+        top: 0.5rem;
+      }
+
+      &:nth-child(3) {
+        top: 1rem;
+      }
+    }
+  }
+}
+nav {
+    background: white;
+    height: 100vh;
+    width: 18.75rem;
+  
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 2rem;
+  
+      li {
+        margin-bottom: 1rem;
+  
+        a {
+          color: #333;
+          text-decoration: none;
+        }
+      }
+    }
+  
+    position: fixed;
+    right: -300px;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  /* Show nav when checkbox is checked */
+  .nav-toggle:checked ~ nav {
+    right: 0;
+  }
+  
+  .nav-toggle:checked ~ .nav-toggle-label span:nth-child(1) {
+    transform: rotate(45deg);
+    top: -2px; /* Fix */
+  }
+  
+  .nav-toggle:checked ~ .nav-toggle-label span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .nav-toggle:checked ~ .nav-toggle-label span:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+  
+.logo img {
+
+    height: 120px;
+    
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+    margin-right: 30px
+}
+
+.book-now {
+    background-color: var(--blue-500);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 90px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 20px;
+    line-height: 16px;
+    text-align:center;
+}
+
+
+
+
+/* Hero Image Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 374px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.hero-background-image {
+    background-image: url("images/homepage main image.avif");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.text-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: left;
+    padding: 20px;
+}
+
+.text-content h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 10px;
+    color: #27b8c5;
+    font-family: 'Instrument Sans', sans-serif;
+    font-weight: 700;
+}
+
+.text-content p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #27b8c5;
+    color: #fcfcfd;
+    padding: 16px 24px;
+    border-radius: 90px;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    line-height: 16px;
+    text-align: center;
+}
+
+.cta-button:hover {
+    background-color: #2398DB;
+}
+.hero-image {
+    background-image: url("images/hero_background_image.avif");
+    position: relative;
+    background-size: cover;
+    width: 100%; 
+    height: 20rem;
+    background-position: center;
+    background-color:rgba(0, 0, 0, 0.5);
+    /*text-align: center;
+    color: #fff;
+    justify-content: center;*/
+}
+
+.hero-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(88, 87, 87, 0.421); /* Adjust RGBA for the gray overlay (50% opacity) */
+    z-index: 1; /* Ensures the overlay is on top of the image */
+}
+.hero-content {
+    position: relative; /* Ensures content is treated as a separate layer */
+    z-index: 2; /* Higher than the overlay (z-index: 1) */
+    text-align: center;
+    color: #333; /* White text for contrast */
+}
+
+.hero-content h1 {
+    color:#333;
+    font-family: "Instrument Sans Bold";
+    font-size: 36px; 
+    margin-bottom: 0.5rem;
+}
+
+
+/* Discover Section */
+.discover-section {
+    padding: 40px 20px;
+}
+
+.discover-section h3 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.discover-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 375px;
+    margin: 0 auto;
+}
+
+.discover-item {
+    position: relative;
+    text-decoration: none;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.discover-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.discover-label {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    color: var(--blue-300);
+    font-size: 24px;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Typography Styles */
 h1 {
     font-family: "Instrument Sans", sans-serif;
     font-weight: bold;
@@ -34,12 +294,11 @@ h2 {
 
 h3 {
     font-family: "Instrument Sans", sans-serif;
-    font-weight: 500;
+    font-weight: medium;
     font-size: 32px;
     color: var(--blue-500);
 }
 
-/* Subtitles */
 .subtitle-1 {
     font-family: "Inter", sans-serif;
     font-weight: 400;
@@ -54,7 +313,6 @@ h3 {
     color: var(--blue-300);
 }
 
-/* Body Text */
 .body-1-semibold {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
@@ -83,21 +341,21 @@ h3 {
     color: var(--blue-900);
 }
 
-/* Layout Adjustments for Mobile */
-header, .hero-section, footer {
+/* Footer */
+footer {
+    background-color: var(--blue-900);
+    color: white;
     padding: 1rem;
     text-align: center;
 }
 
-/* Header Styles */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--blue-700);
+footer a {
+    color: #ffd700;
+    text-decoration: none;
+    margin: 0 0.5rem;
 }
 
-/* Buttons */
+/* Button Styles */
 .button, .cta-btn, .location-btn {
     padding: 0.5rem 1rem;
     border-radius: 5px;
@@ -111,8 +369,122 @@ header {
     background-color: var(--blue-800);
 }
 
-/* Footer */
-footer {
-    background-color: var(--blue-900);
-    color: #fff;
+/*Information Grids Styling */
+/*I use the information grids on the locations, encounters and about us pages*/
+.profile-cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 2rem;
 }
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 155px;
+    margin: 1rem auto;
+}
+
+.profile-image {
+    margin-bottom: 1rem;
+}
+
+.profile-image img {
+    border-radius: 180px;
+    object-fit: cover;
+    background-color: #f0f0f0;
+}
+
+.profile-info {
+    text-align: center;
+}
+
+.profile-title {
+    margin: 0 0 0.5rem 0;
+    /*color: #363940;*/
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: underline;
+    line-height: 24px;
+}
+
+.profile-description {
+    margin: 0;
+    color: #95a1bb;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.main-info img {
+    background-position: center;
+    width: 20 rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.5);
+}
+/*About Us Section styles*/
+.about-us {
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.about-us h1 {
+    font-size: 40px;
+    color: #182135;
+    margin-bottom: 20px;
+    letter-spacing: -0.4px;
+    line-height: 48px;
+}
+
+.image-container {
+    margin: 20px 0;
+}
+
+.image-container img {
+    border-radius: 8px;
+    background-color: #7a869a;
+}
+
+.about-us h2 {
+    font-size: 24px;
+    color: #182135;
+    margin-bottom: 20px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.about-us p {
+    font-size: 14px;
+    color: #000000;
+    text-align: left;
+    line-height: 24px;
+    width: 314px;
+    margin: 0 auto;
+}
+/* 
+Layout Adjustments for Mobile 
+@media (max-width: 768px) {
+    header, .hero-section, footer {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .header-buttons {
+        flex-direction: column;
+        margin-top: 0.5rem;
+    }
+
+    .dropdown-menu {
+        width: 100%;
+        text-align: left;
+    } 
+}*/

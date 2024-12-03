@@ -5,30 +5,65 @@
     TF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dolphin Cove Jamaica</title>
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <header>
     <div class="logo">
-       <!-- #region <img src="https://drive.google.com/file/d/1a39KQVb0PDYn67or0HH0XNNhYNw6ijRP/view?usp=drive_link" alt="Dolphin Cove Logo">-->     </div>
+       <img src="images\Logo.webp" alt="Dolphin Cove Logo"> 
+       <a href="index.html"></a>
+    </div>
        <div class="header-buttons">
-        <a href="#book_now" class="book-now">Book Now</a>
-        <div class="dropdown">
-            <button class="menu-toggle">Menu</button>
-            <div class="dropdown-menu">
-                <a href="#about">About Us</a>
-                <a href="#encounters">Encounters</a>
-                <a href="#locations">Locations</a>
-                <a href="#book-now">Book Now</a>
-                <a href="#contact">Contact Us</a>
-            </div>
+        <a href="book_now.html" class="book-now">Book Now</a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden />
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="book_now.html">Book Now</a></li>
+          <li><a href="encounters.html">Encounters</a></li>
+          <li><a href="locations.html">Locations</a></li>
+          <li><a href="FAQ.html">FAQ</a></li>
+        </ul>
+      </nav>
         </div>
     </div>
 </header>
-</header>
-<body>
-    <h1>Home page</h1>
-    <ul>
-       <li> <a href="about_us_dolphin_cove.md">About Us</a></li>
-    </ul>
-</body>
+
+<section class="hero">
+    <img src="images\homepage main image.avif" alt="Background Image" class="hero-background-image">
+    <div class="text-content">
+        <h1>Discover Dolphin Cove</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, est felis, sagittis viver nulla mattis scelerisque. Eget cras integer.</p>
+        <a href="#" class="cta-button">Discover More</a>
+    </div> 
+</section>
+<section class="discover-section">
+  <h3>Discover Dolphin Cove</h3>
+  <div class="discover-grid">
+      <a href="encounters.html" class="discover-item">
+          <img src="images\Encounters Header Image.avif" alt="Encounters">
+          <span class="discover-label">Encounters</span>
+      </a>
+      <a href="locations.html" class="discover-item">
+          <img src="images\locations header image.avif" alt="Locations">
+          <span class="discover-label">Locations</span>
+      </a>
+      <a href="about_us.html" class="discover-item">
+          <img src="images\about us header image.avif" alt="About Us">
+          <span class="discover-label">About Us</span>
+      </a>
+      <a href="FAQ.html" class="discover-item">
+          <img src="images\FAQ header image.avif" alt="FAQ">
+          <span class="discover-label">FAQ</span>
+      </a>
+  </div>
+</section>
+
 </html>
