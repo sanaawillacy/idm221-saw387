@@ -1,100 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="U
-    TF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dolphin Cove Jamaica</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles.css">
 </head>
-
+<body>
 <header>
     <div class="logo">
         <a href="index.html">
-          <img src="images/Logo.webp" alt="Dolphin Cove Logo">
-      </a>
-      </div>
-       <div class="header-buttons">
+            <img src="images/logo.webp" alt="Dolphin Cove Logo">
+        </a>
+    </div>
+    <div class="header-buttons">
         <a href="book_now.html" class="book-now">Book Now</a>
-        <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden />
-      <label for="nav-toggle" class="nav-toggle-label">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about_us.html">About Us</a></li>
-          <li><a href="book_now.html">Book Now</a></li>
-          <li><a href="encounters.html">Encounters</a></li>
-          <li><a href="locations.html">Locations</a></li>
-          <li><a href="faq.html">faq</a></li>
-        </ul>
-      </nav>
-        </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="book_now.html">Book Now</a></li>
+                <li><a href="encounters.html">Encounters</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
     </div>
 </header>
-<body>
+
+<main>
     <div class="profile-cards-container">
         <div class="profile-card">
             <div class="profile-image">
-                <img src="images\Dolphin Encounter Header.avif" alt="Dolphin Encounter Image" width="121" height="112">
+                <img src="images/dolphin_encounter_header.avif" alt="Dolphin Encounter Image" width="121" height="112">
             </div>
             <div class="profile-info">
                 <h3 class="profile-title">Dolphin Encounter</h3>
-                <p class="profile-description">Do not miss this beautiful opportunity to meet the most beautiful Marine Mammal in the Ocean.
-                </p>
+                <p class="profile-description">Do not miss this beautiful opportunity to meet the most beautiful Marine Mammal in the Ocean.</p>
             </div>
         </div>
         <div class="profile-card">
             <div class="profile-image">
-                <img src="images\Dolphin Swim Adventure Header.avif" alt="Dolphin Swim Adventure Image" width="121" height="112">
+                <img src="images/dolphin_swim_adventure_header_image.avif" alt="Dolphin Swim Adventure Image" width="121" height="112">
             </div>
             <div class="profile-info">
                 <h3 class="profile-title">Dolphin Swim Adventure</h3>
-                <p class="profile-description">Experienceincredible emotions when you hug, kiss, and interact with these affectionate Marine Mammals</p>
+                <p class="profile-description">Experience incredible emotions when you hug, kiss, and interact with these affectionate Marine Mammals.</p>
             </div>
         </div>
         <div class="profile-card">
             <div class="profile-image">
-                <img src="images\Dolphin Royal Swim Header.avif" alt="Dolphin Royal Swim " width="121" height="112">
+                <img src="images/dolphin_royal_swim_header.avif" alt="Dolphin Royal Swim" width="121" height="112">
             </div>
             <div class="profile-info">
-                <h3 class="profile-title">Dolphin Royal Swim </h3>
-                <p class="profile-description">A complete swimming program with Dolphins will fill you with energy and show you the real life of these wonderful Marine beings. </p>
+                <h3 class="profile-title">Dolphin Royal Swim</h3>
+                <p class="profile-description">A complete swimming program with Dolphins will fill you with energy and show you the real life of these wonderful Marine beings.</p>
             </div>
         </div>
         <div class="profile-card">
             <div class="profile-image">
-                <img src="images\Jungle Trail Header Image.avif" alt="Jungle Trail Image" width="121" height="112">
+                <img src="images/jungle_trail_header.avif" alt="Jungle Trail Image" width="121" height="112">
             </div>
             <div class="profile-info">
                 <h3 class="profile-title">Jungle Trail</h3>
-                <p class="profile-description">Explore our lush, tropical jungle trails where you’ll encounter Jamaica’s wildlife</p>
+                <p class="profile-description">Explore our lush, tropical jungle trails where you’ll encounter Jamaica’s wildlife.</p>
             </div>
         </div>
     </div>
-    <section>
-        <section class="our-mission">
-            <h2>Dolphin Encounter</h2>
-            <div class="mission-image">
-                <img src="images\Dolphin Encounter Header.avif" alt="Dolphin Encounter Image" width="400" height="250">
-            </div>
-        <p>Swimming with Dolphins brings you closer to their marine life while you live and learn from them! Live the incredible emotion of hugging, kissing, and much more next to these affectionate Marine Mammals.
-        <p>Behaviors on your Dolphin Experience include:</p>
+
+    <section class="our-mission">
+        <h2>Encounters</h2>
+
+        <!-- Dolphin Encounter -->
+        <h3 id="dolphin-encounter">Dolphin Encounter</h3>
+        <div class="mission-image">
+            <img src="images/dolphin_encounter_header.avif" alt="Dolphin Encounter Image" width="400" height="250">
+        </div>
+        <p>Swimming with Dolphins brings you closer to their marine life while you live and learn from them! Live the incredible emotion of hugging, kissing, and much more next to these affectionate Marine Mammals.</p>
+        <h3 class="subtitle-1">Behaviors on your Dolphin Experience include:</h3>
         <ul>
             <li>Belly Ride</li>
             <li>Hand Target</li>
             <li>Hand Shake</li>
             <li>Kiss</li>
         </ul>
+        
+
+        <!-- Dolphin Swim Adventure -->
+        <h3 id="dolphin-swim-adventure">Dolphin Swim Adventure</h3>
+        <div class="mission-image">
+            <img src="images/dolphin_swim_adventure_header_image.avif" alt="Dolphin Swim Adventure Image" width="400" height="250">
+        </div>
+        <p>Swimming with Dolphins brings you closer to their marine life while you live and learn from them! Live the incredible emotion of hugging, kissing, and much more next to these affectionate Marine Mammals.</p>
+        <h3 class="subtitle-1">Behaviors on your Dolphin Experience include:</h3>
+        <ul>
+            <li>Belly Ride</li>
+            <li>Hand Target</li>
+            <li>Hand Shake</li>
+            <li>Kiss</li>
+            <li>Hug</li>
+        </ul>
+        
+
+        <!-- Dolphin Royal Swim -->
+        <h3 id="dolphin-royal-swim">Dolphin Royal Swim</h3>
+        <div class="mission-image">
+            <img src="images/dolphin_royal_swim_header.avif" alt="Dolphin Royal Swim Image" width="400" height="250">
+        </div>
+        <p>A complete swimming program with Dolphins will fill you with energy and show you the real life of these wonderful Marine beings. Do not miss this beautiful experience full of tenderness!</p>
+        <h3 class="subtitle-1">Behaviors on your Dolphin Experience include:</h3>
+        <ul>
+            <li>Foot Push</li>
+            <li>Dorsal Tow</li>
+            <li>Hand Shake</li>
+            <li>Kiss</li>
+            <li>Hand Target</li>
+            <li>Hug</li>
+        </ul>
         <p>Available in the following habitats:</p>
         <ul>
-            <li>Ocho Rios</li>
-            <li>Montego Bay</li>
-            <li>Puerto Seco</li>
-            <li>Moon Palace</li>
+            <li><a href="locations.html" class="encounters_button">Ocho Rios</a></li>
+            <li><a href="locations.html" class="encounters_button">Montego Bay</a></li>
+            <li><a href="locations.html" class="encounters_button">Puerto Seco</a></li>
+            <li><a href="locations.html" class="encounters_button">Moon Palace</a></li>
         </ul>
-        </section>
+
+        <!-- Jungle Trail -->
+        <h3 id="jungle-trail">Jungle Trail</h3>
+        <div class="mission-image">
+            <img src="images/jungle_trail_header.avif" alt="Jungle Trail Image" width="400" height="250">
+        </div>
+        <p>Beyond the dolphins, explore our lush, tropical jungle trails where you’ll encounter Jamaica’s wildlife, including birds, iguanas, and snakes. It’s an adventurous walk through nature, perfect for those looking to experience more than just the water activities.</p>
+        <h3 class="subtitle-1">Includes:</h3>
+        <ul>
+            <li>Buffet Meal</li>
+            <li>Jungle Trail</li>
+            <li>Stingray Encounter</li>
+        </ul>
+        
+    </section>
+</main>
+</body>
+</html>
