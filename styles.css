@@ -533,3 +533,147 @@ Layout Adjustments for Mobile */
         text-align: left;
     } 
 }*/
+/* Cart Title Styles */
+.cart-title {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    color: #27b8c5;
+    margin: 20px 0;
+}
+
+/* Order Details Styles */
+.order-details {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.order-card {
+    width: 308px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #2398DB;
+    margin-bottom: 16px;
+}
+
+.location-info, .guests, .price-details {
+    margin-bottom: 16px;
+}
+
+.location, .date, .time, .guest-type {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #626264;
+}
+
+.location img, .date img, .time img, .guest-type img {
+    width: 16px;
+    height: 16px;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80px;
+    height: 28px;
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    border-radius: 4px;
+    margin-left: auto;
+}
+
+.quantity-control button {
+    width: 25.81px;
+    height: 28px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #404040;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quantity-control span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: #404040;
+    text-align: center;
+}
+
+.price-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.discount, .total {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #626264;
+}
+
+.discount-amount {
+    color: #FF0000;
+}
+
+.total-amount {
+    color: #000000;
+    font-weight: 800;
+}
+
+/* Checkout Button Styles */
+.checkout-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 14px auto;
+    width: 176.05px;
+    height: 40px;
+    background: #2398DB;
+    border-radius: 100px;
+}
+
+.checkout-btn {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #F7FAFC;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.checkout-btn:hover {
+    background: #057EB6;
+}
+

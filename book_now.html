@@ -1,37 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="U
-    TF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dolphin Cove Jamaica</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles.css">
 </head>
-
+<body>
 <header>
     <div class="logo">
-       <img src="images\Logo.webp" alt="Dolphin Cove Logo"> 
-       <a href="index.html"></a>
+        <a href="index.html">
+            <img src="images/Logo.webp" alt="Dolphin Cove Logo">
+        </a>
     </div>
-       <div class="header-buttons">
+    <div class="header-buttons">
         <a href="book_now.html" class="book-now">Book Now</a>
         <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden />
-      <label for="nav-toggle" class="nav-toggle-label">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about_us.html">About Us</a></li>
-          <li><a href="book_now.html">Book Now</a></li>
-          <li><a href="encounters.html">Encounters</a></li>
-          <li><a href="locations.html">Locations</a></li>
-          <li><a href="faq.html">faq</a></li>
-        </ul>
-      </nav>
-        </div>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="book_now.html">Book Now</a></li>
+                <li><a href="encounters.html">Encounters</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
     </div>
 </header>
+<main>
+    <div class="cart-container">
+        <div class="cart-title">
+            <h2>My Cart</h2>
+        </div>
+        <div class="order-details">
+            <div class="order-card">
+                <h2 class="title">Dolphin Swim</h2>
+                <div class="location-info">
+                    <div class="location">
+                        <img src="images\location vector.avif" alt="Location" />
+                        Dolphin Cove Ocho Rios
+                    </div>
+                    <div class="date">
+                        <img src="images\calendar-vector.avif" alt="Calendar" />
+                        Wednesday,October 30, 2024
+                    </div>
+                    <div class="time">
+                        <img src="images\clock vector.avif" alt="Clock" />
+                        1:00 P.M
+                    </div>
+                </div>
+                <div class="guests">
+                    <div class="guest-type">
+                        <img src="images\user-profile vector.avif" alt="Adult" />
+                        Adults (13+)
+                        <div class="quantity-control">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+                    </div>
+                    <div class="guest-type">
+                        <img src="images\user-profile vector.avif" alt="Child" />
+                        Infants (1-5)
+                        <div class="quantity-control">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+                    </div>
+                    <div class="guest-type">
+                        <img src="images\user-profile vector.avif" alt="Infant" />
+                        Children (6-12)
+                        <div class="quantity-control">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-details">
+                    <div class="discount">
+                        Discounts
+                        <span class="discount-amount">-$40</span>
+                    </div>
+                    <div class="total">
+                        Total
+                        <span class="total-amount">$40</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="checkout-button">
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+</main>
+</body>
+</html>
